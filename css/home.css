@@ -18,7 +18,7 @@
 }
 
 .activities .activities-head h3 {
-  font-size: 35px;
+  font-size: 25px;
   color: var(--two-color);
   border-top: 2px solid var(--two-color);
   border-bottom: 2px solid var(--two-color);
@@ -140,7 +140,7 @@
 }
 
 .projects .project-head h3 {
-  font-size: 35px;
+  font-size: 25px;
   border-top: 2px solid white;
   border-bottom: 2px solid white;
   padding: 10px 20px;
@@ -309,7 +309,7 @@
 }
 
 .videos .videos-head h3 {
-  font-size: 35px;
+  font-size: 25px;
   border-top: 2px solid white;
   border-bottom: 2px solid white;
   padding: 10px 20px;
@@ -367,7 +367,7 @@
 }
 
 .article .row .img-detail h2 {
-  font-size: 35px;
+  font-size: 25px;
   font-weight: 500;
   margin-top: 20px;
   color: var(--one-color);
