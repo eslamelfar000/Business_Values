@@ -330,6 +330,7 @@ body {
 .finance .row .finance-info ul li {
   margin-bottom: 15px;
   display: flex;
+  width: 100%;
 }
 
 .finance .row .finance-info ul li i {
