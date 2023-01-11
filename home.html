@@ -1,0 +1,741 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./liberaries/bootstrap-5.3.0-alpha1-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="./liberaries/fontawesome-free-6.2.1-web/css/all.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./css/nav.css">
+    <link rel="stylesheet" href="./css/home.css">
+    <link rel="shortcut icon" href="#" type="image/x-icon">
+    <title>Home - Business Values Company</title>
+</head>
+
+<body>
+    <!-- navbal start -->
+
+    <nav class="nav-bar">
+        <div class="container">
+            <div class="nav-cover" id="nav">
+                <div class="logo-img">
+                    <a href="home.html"><img src="./pics/logo.jpeg" alt=""></a>
+                </div>
+
+                <ul class="page-links">
+                    <li>
+                        <a class="link" href="#">SERVICES</a>
+                    </li>
+                    <li>
+                        <a class="link" href="#">MEET THE TEAM</a>
+                    </li>
+                    <li>
+                        <a class="link" href="#">OUR PROJECTS</a>
+                    </li>
+                    <li>
+                        <a class="link" href="#">CAREER</a>
+                    </li>
+                    <li>
+                        <a class="link" href="#">MEDIA</a>
+                    </li>
+                    <li>
+                        <a class="link" href="#">CONTACT US</a>
+                    </li>
+                </ul>
+
+                <div class="nav-search" id="search-cover">
+                    <input class="in" type="search" name="" id="search-input" placeholder="search anything here...">
+                </div>
+
+                <button class="search-btn">
+                    <div class="side-nav-btn">
+                        <i class="bi bi-grid-3x3-gap-fill" onclick="openSide()"></i>
+                    </div>
+
+                    <i class="bi bi-search" id="search-btn" onclick="openSearch()"></i>
+                    <i class="bi bi-x-lg" id="close-search-btn" onclick="closeSearch()"></i>
+                </button>
+            </div>
+        </div>
+
+
+        <div class="side-overlay">
+            <div class="side-nav">
+                <div class="close-side-btn">
+                    <i class="bi bi-x-lg" onclick="closeSide()"></i>
+                </div>
+
+                <div class="logo-img">
+                    <a href="home.html"><img src="./pics/logo.jpeg" alt=""></a>
+                </div>
+
+                <ul class="side-links">
+                    <li>
+                        <a class="link" href="#">SERVICES</a>
+                    </li>
+                    <li>
+                        <a class="link" href="#">MEET THE TEAM</a>
+                    </li>
+                    <li>
+                        <a class="link" href="#">OUR PROJECTS</a>
+                    </li>
+                    <li>
+                        <a class="link" href="#">CAREER</a>
+                    </li>
+                    <li>
+                        <a class="link" href="#">MEDIA</a>
+                    </li>
+                    <li>
+                        <a class="link" href="#">CONTACT US</a>
+                    </li>
+                </ul>
+
+                <div class="line">
+                    <hr>
+                </div>
+
+
+                <ul class="social-links">
+                    <li>
+                        <a href="#">
+                            <i class="bi bi-facebook"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="bi bi-instagram"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="bi bi-twitter"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="bi bi-linkedin"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="bi bi-youtube"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+
+
+        <div class="toUp">
+            <i class="bi bi-chevron-double-up"></i>
+        </div>
+    </nav>
+
+    <!-- navbal end -->
+
+
+    <div class="home-header">
+        <div class="header-content">
+            <div class="slide-content">
+                <h1>Business Values</h1>
+                <h4>GENERAL CONTRACTORS</h4>
+                <div></div>
+
+                <p>YOUR SOLID PARTNER</p>
+
+                <ul class="social-slide">
+                    <li>
+                        <a href="#">
+                            <i class="bi bi-facebook"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="bi bi-instagram"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="bi bi-twitter"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="bi bi-linkedin"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="bi bi-youtube"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- activivties section start -->
+    <section class="activities">
+        <div class="container">
+            <div class="activities-head">
+                <h3>Line Of Activities</h3>
+            </div>
+
+            <div class="row">
+                <div class="col-11 col-sm-12">
+                    <div class="swiper mySwiper-review">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="review-slide-content">
+                                    <div class="card-img">
+                                        <img src="./pics/house.jpg" alt="">
+                                    </div>
+
+                                    <div class="card-info">
+                                        <div class="card-info-top">
+                                            <h3>Military</h3>
+                                        </div>
+
+                                        <div class="card-info-bottom">
+                                            <p>Lerum.se använder kakor, cookies. Du som besöker en webbplats som
+                                                använder kakor måste enligt lag få information om att webbplatsen
+                                                innehåller kakor, vad de används till och hur du kan välja bort dem.
+                                            </p>
+
+
+                                            <a href="#" class="details">Details <i
+                                                    class="bi bi-arrow-right-circle"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="review-slide-content">
+                                    <div class="card-img">
+                                        <img src="./pics/house.jpg" alt="">
+                                    </div>
+
+                                    <div class="card-info">
+                                        <div class="card-info-top">
+                                            <h3>Military</h3>
+                                        </div>
+
+                                        <div class="card-info-bottom">
+                                            <p>Lerum.se använder kakor, cookies. Du som besöker en webbplats som
+                                                använder kakor måste enligt lag få information om att webbplatsen
+                                                innehåller kakor, vad de används till och hur du kan välja bort dem.
+                                            </p>
+
+
+                                            <a href="#" class="details">Details <i
+                                                    class="bi bi-arrow-right-circle"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="review-slide-content">
+                                    <div class="card-img">
+                                        <img src="./pics/house.jpg" alt="">
+                                    </div>
+
+                                    <div class="card-info">
+                                        <div class="card-info-top">
+                                            <h3>Military</h3>
+                                        </div>
+
+                                        <div class="card-info-bottom">
+                                            <p>Lerum.se använder kakor, cookies. Du som besöker en webbplats som
+                                                använder kakor måste enligt lag få information om att webbplatsen
+                                                innehåller kakor, vad de används till och hur du kan välja bort dem.
+                                            </p>
+
+
+                                            <a href="#" class="details">Details <i
+                                                    class="bi bi-arrow-right-circle"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="review-slide-content">
+                                    <div class="card-img">
+                                        <img src="./pics/house.jpg" alt="">
+                                    </div>
+
+                                    <div class="card-info">
+                                        <div class="card-info-top">
+                                            <h3>Military</h3>
+                                        </div>
+
+                                        <div class="card-info-bottom">
+                                            <p>Lerum.se använder kakor, cookies. Du som besöker en webbplats som
+                                                använder kakor måste enligt lag få information om att webbplatsen
+                                                innehåller kakor, vad de används till och hur du kan välja bort dem.
+                                            </p>
+
+
+                                            <a href="#" class="details">Details <i
+                                                    class="bi bi-arrow-right-circle"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="review-slide-content">
+                                    <div class="card-img">
+                                        <img src="./pics/house.jpg" alt="">
+                                    </div>
+
+                                    <div class="card-info">
+                                        <div class="card-info-top">
+                                            <h3>Military</h3>
+                                        </div>
+
+                                        <div class="card-info-bottom">
+                                            <p>Lerum.se använder kakor, cookies. Du som besöker en webbplats som
+                                                använder kakor måste enligt lag få information om att webbplatsen
+                                                innehåller kakor, vad de används till och hur du kan välja bort dem.
+                                            </p>
+
+
+                                            <a href="#" class="details">Details <i
+                                                    class="bi bi-arrow-right-circle"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- activivties section end -->
+
+
+
+
+    <!-- project start -->
+
+    <section class="projects">
+        <div class="container">
+            <div class="project-head">
+                <h3>Our Latest Projects</h3>
+            </div>
+
+            <div class="row">
+                <div class="col-11 col-sm-12 col-md-6 col-lg-4">
+                    <div class="project-info">
+                        <img src="./pics/build1.avif" alt="">
+
+                        <h4>Six Falgs Qiddiya</h4>
+
+                        <span>Six Falgs Qiddiya</span>
+
+                        <div class="zoom">
+                            <i class="bi bi-zoom-in"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-11 col-sm-12 col-md-6 col-lg-4">
+                    <div class="project-info">
+                        <img src="./pics/back.jpg" alt="">
+
+                        <h4>Six Falgs Qiddiya</h4>
+
+                        <span>Six Falgs Qiddiya</span>
+
+                        <div class="zoom">
+                            <i class="bi bi-zoom-in"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-11 col-sm-12 col-md-6 col-lg-4">
+                    <div class="project-info">
+                        <img src="./pics/house.jpg" alt="">
+
+                        <h4>Six Falgs Qiddiya</h4>
+
+                        <span>Six Falgs Qiddiya</span>
+
+                        <div class="zoom">
+                            <i class="bi bi-zoom-in"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-11 col-sm-12 col-md-6 col-lg-4">
+                    <div class="project-info">
+                        <img src="./pics/bui.webp" alt="">
+
+                        <h4>Six Falgs Qiddiya</h4>
+
+                        <span>Six Falgs Qiddiya</span>
+
+                        <div class="zoom">
+                            <i class="bi bi-zoom-in"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-11 col-sm-12 col-md-6 col-lg-4">
+                    <div class="project-info">
+                        <img src="./pics/build3.jpg" alt="">
+
+                        <h4>Six Falgs Qiddiya</h4>
+
+                        <span>Six Falgs Qiddiya</span>
+
+                        <div class="zoom">
+                            <i class="bi bi-zoom-in"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-11 col-sm-12 col-md-6 col-lg-4">
+                    <div class="project-info">
+                        <img src="./pics/build1.avif" alt="">
+
+                        <h4>Six Falgs Qiddiya</h4>
+
+                        <span>Six Falgs Qiddiya</span>
+
+                        <div class="zoom">
+                            <i class="bi bi-zoom-in"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="all">
+                <a href="#" class="all-pro">All Projects <i class="bi bi-box-arrow-up-right"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- project end -->
+
+
+
+
+    <!-- videos start -->
+
+    <section class="videos">
+        <div class="container">
+            <div class="videos-head">
+                <h3>Our Latest videos</h3>
+            </div>
+
+
+            <div class="row">
+                <div class="col-11 col-md-6 col-lg-4">
+                    <div class="col-video">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/5zzbv3t-C_Q"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen></iframe>
+                    </div>
+                </div>
+
+                <div class="col-11 col-md-6 col-lg-4">
+                    <div class="col-video">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/jOZlFAovEpk"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen></iframe>
+                    </div>
+                </div>
+
+                <div class="col-11 col-md-6 col-lg-4">
+                    <div class="col-video">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/utay9MRkYiM"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen></iframe>
+                    </div>
+                </div>
+                <div class="col-11 col-md-6 col-lg-4">
+                    <div class="col-video">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/5zzbv3t-C_Q"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen></iframe>
+                    </div>
+                </div>
+
+                <div class="col-11 col-md-6 col-lg-4">
+                    <div class="col-video">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/jOZlFAovEpk"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen></iframe>
+                    </div>
+                </div>
+
+                <div class="col-11 col-md-6 col-lg-4">
+                    <div class="col-video">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/utay9MRkYiM"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- videos end -->
+
+
+    <!-- article start -->
+
+    <section class="article">
+        <div class="container">
+            <div class="row">
+                <div class="col-11 col-xxl-6">
+                    <div class="art-img">
+                        <img src="pics/man.jpg" alt="">
+                    </div>
+                </div>
+
+                <div class="col-12 col-xxl-6">
+                    <div class="img-detail">
+                        <h2>Nehme Tohme's Letter</h2>
+
+                        <p>Since the company was founded in 1972, Almabani has built a business based on the core value
+                            of Customer's satisfaction and the timely completion of the jobs entrusted to us. These
+                            values guide our conduct on the market place.</p>
+
+                        <p>We tackle tough jobs but deliver results, even under pressure. In the process, we always have
+                            our eyes set to exceed expectations while honoring our commitments. We are driven by this
+                            inner passion to do what is right for the community that we are part of.</p>
+
+                        <p>Almabani aspires to be the best company in its field of business, a company that creates
+                            value for its customers by delivering high quality work on time. Over the years we have
+                        </p>
+                        <h4>Nehmé Y. Tohmé</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- article end -->
+
+
+    <!-- statistics start -->
+
+    <section class="statistics">
+        <div class="container">
+            <div class="row">
+                <div class="colom col-11 col-sm-12 col-md-6 col-lg-4">
+                    <div class="col-info">
+                        <div class="col-img">
+                            <div class="icon">
+                                <img src="./pics/date.png" alt="">
+                            </div>
+                        </div>
+
+                        <h3>1972</h3>
+                        <p>Business Values Founding Year</p>
+                    </div>
+                </div>
+                <div class="colom col-11 col-sm-12 col-md-6 col-lg-4">
+                    <div class="col-info">
+                        <div class="col-img">
+                            <div class="icon">
+                                <img src="./pics/professional.png" alt="">
+                            </div>
+                        </div>
+
+                        <h3>971</h3>
+                        <p>Professionals</p>
+                    </div>
+                </div>
+                <div class="colom col-11 col-sm-12 col-md-6 col-lg-4">
+                    <div class="col-info">
+                        <div class="col-img">
+                            <div class="icon">
+                                <img src="./pics/home.png" alt="">
+                            </div>
+                        </div>
+
+                        <h3>12,920</h3>
+                        <p>Work Force</p>
+                    </div>
+                </div>
+                <div class="colom col-11 col-sm-12 col-md-6 col-lg-4">
+                    <div class="col-info">
+                        <div class="col-img">
+                            <div class="icon">
+                                <img src="./pics/maintenance.png" alt="">
+                            </div>
+                        </div>
+
+                        <h3>1926</h3>
+                        <p>Equipment</p>
+                    </div>
+                </div>
+                <div class="colom col-11 col-sm-12 col-md-6 col-lg-4">
+                    <div class="col-info">
+                        <div class="col-img">
+                            <div class="icon">
+                                <img src="./pics/to-do-list.png" alt="">
+                            </div>
+                        </div>
+
+                        <h3>240</h3>
+                        <p>Total Project Executed</p>
+                    </div>
+                </div>
+                <div class="colom col-11 col-sm-12 col-md-6 col-lg-4">
+                    <div class="col-info">
+                        <div class="col-img">
+                            <div class="icon">
+                                <img src="./pics/money.png" alt="">
+                            </div>
+                        </div>
+
+                        <h3>USD 7.2 B</h3>
+                        <p>Total Project Value</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- statistics end -->
+
+
+    <section class="big-img">
+        <div class="container">
+            <div class="sec-img">
+                <img src="./pics/high.PNG" alt="">
+            </div>
+        </div>
+    </section>
+
+
+    <!-- footer start -->
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-info">
+                <div class="footer-logo">
+                    <a href="home.html"><img src="./pics/logo.jpeg" alt=""></a>
+                </div>
+
+                <ul class="footer-links">
+                    <li>
+                        <a href="#">
+                            <i class="bi bi-facebook"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="bi bi-instagram"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="bi bi-twitter"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="bi bi-linkedin"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="bi bi-youtube"></i>
+                        </a>
+                    </li>
+                </ul>
+
+                <div class="footer-bottom">
+                    <p>Copyright <img src="./pics/copyright.png" alt=""> 2023 </p>
+                    <p> All Rights Reserved </p>
+                    <div class="bottom-links">
+                        <a href="#">Company Profile</a>
+                        <span>|</span>
+                        <a href="#">Terms of Use</a>
+                        <span>|</span>
+                        <a href="#">Privacy Policy</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- footer end -->
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"
+        integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+    <script src="./js/nav.js"></script>
+
+    <script>
+        // var swiper = new Swiper(".mySwiper-head", {
+        //     spaceBetween: 30,
+        //     effect: "fade",
+        //     preventClicks: false,
+        //     loop: true,
+        //     autoplay: {
+        //         delay: 5000,
+        //         disableOnInteraction: false,
+        //     },
+        // });
+
+
+
+        var swiper_client = new Swiper(".mySwiper-review", {
+            spaceBetween: 30,
+            slidesPerView: 4,
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            loop: true,
+            autoplay: {
+                delay: 3500,
+                disableOnInteraction: false,
+            },
+
+
+            breakpoints: {
+                0: {
+                    slidesPerView: 1,
+                    spaceBetween: 40,
+                },
+                768: {
+                    slidesPerView: 2,
+                    spaceBetween: 20,
+                },
+                992: {
+                    slidesPerView: 3,
+                    spaceBetween: 30,
+                },
+                1199: {
+                    slidesPerView: 4,
+                    spaceBetween: 30,
+                },
+            },
+
+        });
+    </script>
+</body>
+
+</html>
