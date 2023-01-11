@@ -1,0 +1,737 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./liberaries/bootstrap-5.3.0-alpha1-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="./liberaries/fontawesome-free-6.2.1-web/css/all.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./css/nav.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/body&header.css">
+    <link rel="stylesheet" href="./css/team.css">
+    <link rel="shortcut icon" href="#" type="image/x-icon">
+    <title>Services - Business Values Company</title>
+</head>
+
+<body>
+    <!-- navbar start -->
+
+    <nav class="nav-bar">
+        <div class="container">
+            <div class="nav-cover" id="nav">
+                <div class="logo-img">
+                    <a href="home.html"><img src="./pics/logo.jpeg" alt=""></a>
+                </div>
+
+                <ul class="page-links">
+                    <li>
+                        <a class="link" href="services.html">SERVICES</a>
+                    </li>
+                    <li>
+                        <a class="link" href="team.html">MEET THE TEAM</a>
+                    </li>
+                    <li>
+                        <a class="link" href="#">OUR PROJECTS</a>
+                    </li>
+                    <li>
+                        <a class="link" href="#">CAREER</a>
+                    </li>
+                    <li>
+                        <a class="link" href="#">MEDIA</a>
+                    </li>
+                    <li>
+                        <a class="link" href="#">CONTACT US</a>
+                    </li>
+                </ul>
+
+                <div class="nav-search" id="search-cover">
+                    <input class="in" type="search" name="" id="search-input" placeholder="search anything here...">
+                </div>
+
+                <button class="search-btn">
+                    <div class="side-nav-btn">
+                        <i class="bi bi-grid-3x3-gap-fill" onclick="openSide()"></i>
+                    </div>
+
+                    <i class="bi bi-search" id="search-btn" onclick="openSearch()"></i>
+                    <i class="bi bi-x-lg" id="close-search-btn" onclick="closeSearch()"></i>
+                </button>
+            </div>
+        </div>
+
+
+        <div class="side-overlay">
+            <div class="side-nav">
+                <div class="close-side-btn">
+                    <i class="bi bi-x-lg" onclick="closeSide()"></i>
+                </div>
+
+                <div class="logo-img">
+                    <a href="home.html"><img src="./pics/logo.jpeg" alt=""></a>
+                </div>
+
+                <ul class="side-links">
+                    <li>
+                        <a class="link" href="services.html">SERVICES</a>
+                    </li>
+                    <li>
+                        <a class="link" href="team.html">MEET THE TEAM</a>
+                    </li>
+                    <li>
+                        <a class="link" href="#">OUR PROJECTS</a>
+                    </li>
+                    <li>
+                        <a class="link" href="#">CAREER</a>
+                    </li>
+                    <li>
+                        <a class="link" href="#">MEDIA</a>
+                    </li>
+                    <li>
+                        <a class="link" href="#">CONTACT US</a>
+                    </li>
+                </ul>
+
+                <div class="line">
+                    <hr>
+                </div>
+
+
+                <ul class="social-links">
+                    <li>
+                        <a href="#">
+                            <i class="bi bi-facebook"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="bi bi-instagram"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="bi bi-twitter"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="bi bi-linkedin"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="bi bi-youtube"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+
+
+        <div class="toUp">
+            <i class="bi bi-chevron-double-up"></i>
+        </div>
+    </nav>
+
+    <!-- navbar end -->
+
+
+    <div class="home-header">
+        <div class="header-content">
+            <div class="slide-content">
+                <h1>Business Values</h1>
+                <h4>GENERAL CONTRACTORS</h4>
+                <div></div>
+
+                <p>YOUR SOLID PARTNER</p>
+
+                <ul class="social-slide">
+                    <li>
+                        <a href="#">
+                            <i class="bi bi-facebook"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="bi bi-instagram"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="bi bi-twitter"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="bi bi-linkedin"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="bi bi-youtube"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- manager start -->
+
+    <section class="manager">
+        <div class="container">
+            <div class="manager-head">
+                <h3>The Board of Managers</h3>
+            </div>
+
+
+            <div class="row">
+                <div class="col-11 col-sm-12">
+                    <div class="swiper mySwiper-review">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="manage-info">
+                                    <div class="manager-img" id="zoom" onclick="popUpPage()">
+                                        <img src="/pics/manager1.PNG" alt="">
+
+                                        <div class="img-zoom">
+                                            <i class="bi bi-zoom-in"></i>
+                                        </div>
+                                    </div>
+
+                                    <div class="manager-name">
+                                        <h4>Youssef N. Tohme</h4>
+                                        <p>Chairman</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="manage-info">
+                                    <div class="manager-img" onclick="popUpPage()">
+                                        <img src="/pics/manager2.PNG" alt="">
+
+                                        <div class="img-zoom">
+                                            <i class="bi bi-zoom-in"></i>
+                                        </div>
+                                    </div>
+
+                                    <div class="manager-name">
+                                        <h4>Badr H. Alzuhair</h4>
+                                        <p>Vice-chairman </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="manage-info">
+                                    <div class="manager-img" onclick="popUpPage()">
+                                        <img src="/pics/manager3.PNG" alt="">
+
+                                        <div class="img-zoom">
+                                            <i class="bi bi-zoom-in"></i>
+                                        </div>
+                                    </div>
+
+                                    <div class="manager-name">
+                                        <h4> Joseph K. Daher</h4>
+                                        <p>Member </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="manage-info">
+                                    <div class="manager-img" onclick="popUpPage()">
+                                        <img src="/pics/manager4.PNG" alt="">
+
+                                        <div class="img-zoom">
+                                            <i class="bi bi-zoom-in"></i>
+                                        </div>
+                                    </div>
+
+                                    <div class="manager-name">
+                                        <h4> Alfred R. Hakim</h4>
+                                        <p>Member </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="manage-info">
+                                    <div class="manager-img" onclick="popUpPage()">
+                                        <img src="/pics/manager5.PNG" alt="">
+
+                                        <div class="img-zoom">
+                                            <i class="bi bi-zoom-in"></i>
+                                        </div>
+                                    </div>
+
+                                    <div class="manager-name">
+                                        <h4> Victor Abou Abdallah</h4>
+                                        <p>Member</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="manage-info">
+                                    <div class="manager-img" onclick="popUpPage()">
+                                        <img src="/pics/manager6.PNG" alt="">
+
+                                        <div class="img-zoom">
+                                            <i class="bi bi-zoom-in"></i>
+                                        </div>
+                                    </div>
+
+                                    <div class="manager-name">
+                                        <h4> Bandar A. Hasanain</h4>
+                                        <p>Member</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="popUp-over" id="popUp">
+                <div class="popUp-content">
+                    <div class="close" onclick="closePopUpPage()">
+                        <i class="bi bi-x-lg"></i>
+                    </div>
+                    <div class="row">
+                        <div class="col-10 col-lg-3">
+                            <div class="pop-img">
+                                <img src="./pics/manager1.PNG" alt="">
+
+                                <h5>Youssef N. Tohme</h5>
+
+                                <p>Chairman...</p>
+                            </div>
+                        </div>
+
+                        <div class="col-11 col-lg-8">
+                            <div class="pop-desc">
+                                <p>Youssef Nehme Tohme is the Chairman of the Board of Managers of Almabani General
+                                    Contractors LLC. In his capacity, he holds directorship and executive position in
+                                    the companies’ activities and business.
+                                    Born in 1974, Youssef has received both his Bachelors’ and Masters’ degree in Civil
+                                    Engineering from City, University of London and is a Member of the Institute of
+                                    Civil Engineers.
+                                    Youssef started his professional career working in the Oil and Gas sector where he
+                                    built the business bottom-up tuning Levant Oil LLC. company into an international
+                                    trading, importation, storage and distribution company with an annual turnover of
+                                    720,000 metric tons yearly of refined gasoline and gasoil products thru a terminal
+                                    storage facility of 55,000 metric tons. In his capacity as CEO, his activities
+                                    covered the Levant and West African region turning the company into an international
+                                    multi-million Dollar player.
+                                    Youssef joined Almabani General Contractors in 2009 as Vice President and through
+                                    his managerial experience and civil engineering background helped manage all
+                                    activities across Almabanis’ business. Youssef served up until 2020 as Member of
+                                    Board and Member of the Steering Committee of the Riyadh Metro Project overlooking
+                                    the execution of the multi-billion Saudi Riyals mega project. In 2020 Youssef was
+                                    promoted to Chairman of the Board of Almabani General Contractors, where he serves
+                                    as a board member as well as overlooks the daily activities of the company.
+                                    Youssef heads the Nehme & Therese Foundation a private charity, non-profit
+                                    organization that helps the underprivileged come out of extreme poverty. The
+                                    foundation has helped in the last 15 years in the circa of 100,000 families giving
+                                    them access to education, work opportunities, agricultural enablers and healthcare
+                                    to help them lead honorable lives. Youssef is an active investor in innovative
+                                    technologies and renewable energy companies, he serves as a board member in a
+                                    variety of businesses in the region.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- manager end -->
+
+
+
+    <!-- management start -->
+
+    <section class="manager">
+        <div class="container">
+            <div class="manager-head">
+                <h3>The Management</h3>
+            </div>
+
+
+            <div class="row">
+                <div class="col-11 col-sm-12">
+                    <div class="swiper mySwiper-review">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="manage-info">
+                                    <div class="manager-img" id="zoom" onclick="popUpPage()">
+                                        <img src="/pics/manager1.PNG" alt="">
+
+                                        <div class="img-zoom">
+                                            <i class="bi bi-zoom-in"></i>
+                                        </div>
+                                    </div>
+
+                                    <div class="manager-name">
+                                        <h4>Youssef N. Tohme</h4>
+                                        <p>Chairman</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="manage-info">
+                                    <div class="manager-img" onclick="popUpPage()">
+                                        <img src="/pics/manager2.PNG" alt="">
+
+                                        <div class="img-zoom">
+                                            <i class="bi bi-zoom-in"></i>
+                                        </div>
+                                    </div>
+
+                                    <div class="manager-name">
+                                        <h4>Badr H. Alzuhair</h4>
+                                        <p>Vice-chairman </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="manage-info">
+                                    <div class="manager-img" onclick="popUpPage()">
+                                        <img src="/pics/manager3.PNG" alt="">
+
+                                        <div class="img-zoom">
+                                            <i class="bi bi-zoom-in"></i>
+                                        </div>
+                                    </div>
+
+                                    <div class="manager-name">
+                                        <h4> Joseph K. Daher</h4>
+                                        <p>Member </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="manage-info">
+                                    <div class="manager-img" onclick="popUpPage()">
+                                        <img src="/pics/manager4.PNG" alt="">
+
+                                        <div class="img-zoom">
+                                            <i class="bi bi-zoom-in"></i>
+                                        </div>
+                                    </div>
+
+                                    <div class="manager-name">
+                                        <h4> Alfred R. Hakim</h4>
+                                        <p>Member </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="manage-info">
+                                    <div class="manager-img" onclick="popUpPage()">
+                                        <img src="/pics/manager5.PNG" alt="">
+
+                                        <div class="img-zoom">
+                                            <i class="bi bi-zoom-in"></i>
+                                        </div>
+                                    </div>
+
+                                    <div class="manager-name">
+                                        <h4> Victor Abou Abdallah</h4>
+                                        <p>Member</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="manage-info">
+                                    <div class="manager-img" onclick="popUpPage()">
+                                        <img src="/pics/manager6.PNG" alt="">
+
+                                        <div class="img-zoom">
+                                            <i class="bi bi-zoom-in"></i>
+                                        </div>
+                                    </div>
+
+                                    <div class="manager-name">
+                                        <h4> Bandar A. Hasanain</h4>
+                                        <p>Member</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="popUp-over" id="popUp">
+                <div class="popUp-content">
+                    <div class="close" onclick="closePopUpPage()">
+                        <i class="bi bi-x-lg"></i>
+                    </div>
+                    <div class="row">
+                        <div class="col-10 col-lg-3">
+                            <div class="pop-img">
+                                <img src="./pics/manager1.PNG" alt="">
+
+                                <h5>Youssef N. Tohme</h5>
+
+                                <p>Chairman...</p>
+                            </div>
+                        </div>
+
+                        <div class="col-11 col-lg-8">
+                            <div class="pop-desc">
+                                <p>Youssef Nehme Tohme is the Chairman of the Board of Managers of Almabani General
+                                    Contractors LLC. In his capacity, he holds directorship and executive position in
+                                    the companies’ activities and business.
+                                    Born in 1974, Youssef has received both his Bachelors’ and Masters’ degree in Civil
+                                    Engineering from City, University of London and is a Member of the Institute of
+                                    Civil Engineers.
+                                    Youssef started his professional career working in the Oil and Gas sector where he
+                                    built the business bottom-up tuning Levant Oil LLC. company into an international
+                                    trading, importation, storage and distribution company with an annual turnover of
+                                    720,000 metric tons yearly of refined gasoline and gasoil products thru a terminal
+                                    storage facility of 55,000 metric tons. In his capacity as CEO, his activities
+                                    covered the Levant and West African region turning the company into an international
+                                    multi-million Dollar player.
+                                    Youssef joined Almabani General Contractors in 2009 as Vice President and through
+                                    his managerial experience and civil engineering background helped manage all
+                                    activities across Almabanis’ business. Youssef served up until 2020 as Member of
+                                    Board and Member of the Steering Committee of the Riyadh Metro Project overlooking
+                                    the execution of the multi-billion Saudi Riyals mega project. In 2020 Youssef was
+                                    promoted to Chairman of the Board of Almabani General Contractors, where he serves
+                                    as a board member as well as overlooks the daily activities of the company.
+                                    Youssef heads the Nehme & Therese Foundation a private charity, non-profit
+                                    organization that helps the underprivileged come out of extreme poverty. The
+                                    foundation has helped in the last 15 years in the circa of 100,000 families giving
+                                    them access to education, work opportunities, agricultural enablers and healthcare
+                                    to help them lead honorable lives. Youssef is an active investor in innovative
+                                    technologies and renewable energy companies, he serves as a board member in a
+                                    variety of businesses in the region.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- management end -->
+
+
+    <!-- about manangement start -->
+
+    <section class="about-management">
+        <div class="container">
+            <div class="row">
+                <div class="colom col-11 col-sm-12 col-xl-6">
+                    <div class="management-info">
+                        <h2>Management</h2>
+
+                        <p>Almabani management team is behind the company’s success and sustained growth and expansion.
+                            Dedication, expertise, professionalism and commitment are key elements of the management
+                            policy. </p>
+
+                        <p>The management team key performance is based on consistency, clarity and steadiness of
+                            purpose, and thorough leadership; these same principles are inspired by the new generation
+                            of employees joining the company. </p>
+
+                        <p>Almabani continues to invest in quality, value engineering, proactive and talented people,
+                            endeavoring at all times to satisfy our client's expectations and to best serve the welfare
+                            of our employees and society. </p>
+
+                        <p>In the years to come, we will continue to carry the flag fueled by an inherent culture of
+                            steady growth, quality work and commitment to timely achievements. </p>
+                    </div>
+                </div>
+
+                <div class="colom col-11 col-sm-12 col-xl-6">
+                    <div class="management-img">
+                        <img src="/pics/management.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- about manangement end -->
+
+
+    <!-- about manangement start -->
+
+    <section class="finance">
+        <div class="container">
+            <div class="row">
+                <div class="colom col-11 col-sm-12 col-xl-6">
+                    <div class="finance-img">
+                        <img src="/pics/finance-careers.jpg" alt="">
+                    </div>
+                </div>
+
+
+                <div class="colom col-11 col-sm-12 col-xl-6">
+                    <div class="finance-info">
+                        <h2>Finance & Accounting</h2>
+
+                        <p>Finance and Accounting are service departments. They serve as the financial background for
+                            all the activities of the company where all the records are kept and managed. Their main
+                            tasks are: </p>
+
+                        <ul>
+                            <li>
+                                <i class="bi bi-bookmark-check"></i>
+                                <h5>To respond to the internal top management’s business needs. </h5>
+                            </li>
+                            <li>
+                                <i class="bi bi-bookmark-check"></i>
+                                <h5> To provide accurate financial information to all other departments. </h5>
+                            </li>
+                            <li>
+                                <i class="bi bi-bookmark-check"></i>
+                                <h5> To liaise with the financial institutions that constitute the backbone of the
+                                    company’s activities. </h5>
+                            </li>
+                            <li>
+                                <i class="bi bi-bookmark-check"></i>
+                                <h5> To develop for the company’s shareholders financial reports to review the
+                                    activities and performance of the company. </h5>
+                            </li>
+                            <li>
+                                <i class="bi bi-bookmark-check"></i>
+                                <h5> To meet all legal requirements inherent to us. </h5>
+                            </li>
+                            <li>
+                                <i class="bi bi-bookmark-check"></i>
+                                <h5> To ensure that books and records are kept up-to-date according to defined policies
+                                    and procedures set by the management. </h5>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- about manangement end -->
+
+    <!-- footer start -->
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-info">
+                <div class="footer-logo">
+                    <a href="home.html"><img src="./pics/logo.jpeg" alt=""></a>
+                </div>
+
+                <ul class="footer-links">
+                    <li>
+                        <a href="#">
+                            <i class="bi bi-facebook"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="bi bi-instagram"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="bi bi-twitter"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="bi bi-linkedin"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="bi bi-youtube"></i>
+                        </a>
+                    </li>
+                </ul>
+
+                <div class="footer-bottom">
+                    <p>Copyright <img src="./pics/copyright.png" alt=""> 2023 </p>
+                    <p> All Rights Reserved </p>
+                    <div class="bottom-links">
+                        <a href="#">Company Profile</a>
+                        <span>|</span>
+                        <a href="#">Terms of Use</a>
+                        <span>|</span>
+                        <a href="#">Privacy Policy</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- footer end -->
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"
+        integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+    <script src="./js/nav.js"></script>
+    <script src="./js/team.js"></script>
+
+
+    <script>
+        var swiper_client = new Swiper(".mySwiper-review", {
+            spaceBetween: 30,
+            slidesPerView: 4,
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            loop: true,
+            autoplay: {
+                delay: 3500,
+                disableOnInteraction: false,
+            },
+
+
+            breakpoints: {
+                0: {
+                    slidesPerView: 1,
+                    spaceBetween: 40,
+                },
+                450: {
+                    slidesPerView: 2,
+                    spaceBetween: 20,
+                },
+                768: {
+                    slidesPerView: 3,
+                    spaceBetween: 20,
+                },
+                992: {
+                    slidesPerView: 3,
+                    spaceBetween: 30,
+                },
+                1199: {
+                    slidesPerView: 4,
+                    spaceBetween: 30,
+                },
+            },
+
+        });
+    </script>
+
+
+</body>
+
+</html>
