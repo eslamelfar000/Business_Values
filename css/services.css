@@ -1,0 +1,110 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  --one-color: #fa9f13;
+  --two-color: #3b3b3b;
+  --three-color: #aa7817;
+}
+
+.services {
+  padding: 100px 0px;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.79);
+}
+
+.services .services-head {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.services .services-head h3 {
+  font-size: 25px;
+  color: var(--two-color);
+  border-top: 2px solid var(--two-color);
+  border-bottom: 2px solid var(--two-color);
+  margin-bottom: 0;
+  padding: 10px 10px 15px 10px;
+}
+
+.services .row .colom {
+  margin-bottom: 30px;
+}
+
+.services .row .col-details {
+  border-radius: 10px;
+  overflow: hidden;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: var(--one-color);
+  box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.15);
+  transition: 0.4s;
+}
+
+.services .row .col-details:hover {
+  box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.267);
+  transform: translateY(-15px);
+}
+
+.services .row .card-img {
+  margin-bottom: 20px;
+}
+
+.services .row .card-img img {
+  width: 100%;
+  height: 250px;
+  border-radius: 10px 10px 0px 0px;
+}
+
+.services .row .col-details .card-info {
+  background: var(--two-color);
+  padding: 0px 20px 20px 20px;
+  color: white;
+  text-align: center;
+  border-radius: 0px 0px 10px 10px;
+  height: 100%;
+}
+
+.services .row .col-details .card-link {
+  text-align: center;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.services .row .col-details .card-link a {
+  text-decoration: none;
+  color: white;
+  background: var(--one-color);
+  padding: 5px 30px 8px 30px;
+  font-size: 22px;
+  transform: skewX(-15deg);
+  border: 3px solid var(--one-color);
+  transition: 0.4s;
+  border-radius: 0px 0px 5px 5px;
+}
+
+.services .row .col-details .card-link a:hover {
+  background: none;
+  color: var(--one-color);
+  transform: skewX(0deg) scale(1.1);
+}
+
+.services .row .col-details .card-info p {
+  font-size: 17px;
+  opacity: 0.8;
+}
+
+@media (max-width: 767px) {
+  .services .row {
+    display: flex;
+    justify-content: center;
+  }
+}
