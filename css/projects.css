@@ -251,6 +251,10 @@ body {
     grid-template-columns: repeat(2, 1fr);
   }
 
+  .projects .projects-filter select {
+    width: auto;
+  }
+
   .projects .projects-filter select:nth-child(2),
   .projects .projects-filter select:nth-child(4) {
     margin-right: 0;
