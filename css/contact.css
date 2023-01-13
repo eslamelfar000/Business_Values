@@ -431,7 +431,7 @@ body {
 
 @media (max-width: 575px) {
   .contact-form .row .social-link li {
-    margin: 0px 7px;
+    margin: 0px 6px;
   }
 
   .contact .row .social-link li a,
