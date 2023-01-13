@@ -434,6 +434,7 @@ body {
   .contact-form .row .social-link li a {
     font-size: 17px;
     padding: 6px 10px;
+    padding-right: 15px;
   }
 
   .contact-form .row .social-link li a::before,
