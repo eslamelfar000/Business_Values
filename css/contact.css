@@ -423,4 +423,10 @@ body {
   }
 }
 
+@media (max-width: 767px) {
+  .contact-form .row .right-side h2 {
+    font-size: 25px;
+  }
+}
+
 /* contact form end */
