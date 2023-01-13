@@ -37,6 +37,8 @@ body {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   margin-bottom: 40px;
+  width: 100%;
+  overflow: hidden;
 }
 
 .projects .projects-filter select {
@@ -244,9 +246,14 @@ body {
 }
 
 @media (max-width: 575px) {
-  .projects .projects-filter {
+  /* .projects .projects-filter {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
+  } */
+
+  .projects .projects-filter select:nth-child(2),
+  .projects .projects-filter select:nth-child(4) {
+    margin-right: 0;
   }
 
   .projects .row {
