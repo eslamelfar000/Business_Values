@@ -244,6 +244,11 @@ body {
 }
 
 @media (max-width: 575px) {
+  .projects .projects-filter {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
   .projects .row {
     display: flex;
     justify-content: center;
