@@ -1,0 +1,253 @@
+:root {
+  --one-color: #fa9f13;
+  --two-color: #3b3b3b;
+  --three-color: #aa7817;
+}
+
+body {
+  padding: 0px;
+  margin: 0px;
+}
+
+/* project section start */
+
+.projects {
+  padding: 100px 0px;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.837);
+}
+
+.projects .projects-head {
+  display: flex;
+  justify-content: center;
+  color: var(--two-color);
+  margin-bottom: 40px;
+}
+
+.projects .projects-head h3 {
+  font-size: 25px;
+  border-top: 2px solid var(--two-color);
+  border-bottom: 2px solid var(--two-color);
+  padding: 10px 20px;
+}
+
+.projects .projects-filter {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  margin-bottom: 40px;
+}
+
+.projects .projects-filter select {
+  /* width: 250px; */
+  border: 1px solid var(--two-color);
+  background: var(--two-color);
+  color: var(--one-color);
+  border-radius: 5px;
+  padding: 10px 100px 10px 15px;
+  transition: 0.4s;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.projects .projects-filter button {
+  border: 2px solid var(--one-color);
+  background: var(--one-color);
+  color: var(--two-color);
+  padding: 6px 15px;
+  border-radius: 5px;
+  transition: 0.4s;
+  font-size: 18px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  /* width: 150px; */
+  justify-content: center;
+}
+
+.projects .projects-filter button:hover {
+  background: none;
+  border-color: var(--two-color);
+}
+
+.projects .projects-filter button i {
+  transition: 0.4s;
+  margin-left: 10px;
+  font-size: 20px;
+  font-size: 700;
+}
+
+.projects .projects-filter button:hover > i {
+  transform: rotate(-360deg);
+}
+
+.projects .row {
+  display: flex;
+  align-items: center;
+}
+
+.projects .row .project-info {
+  overflow: hidden;
+  position: relative;
+  border-radius: 5px;
+  margin-bottom: 40px;
+  height: 300px;
+}
+
+.projects .row .project-info::after {
+  content: "";
+  position: absolute;
+  background: rgba(0, 0, 0, 0.201);
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  transition: 0.5s;
+}
+
+.projects .row .project-info:hover::after {
+  background: rgba(0, 0, 0, 0.605);
+}
+
+.projects .row img {
+  width: 100%;
+  height: 100%;
+  transition: 0.5s;
+}
+
+.projects .row .project-info h4 {
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+  width: 100%;
+  padding: 15px 10px 18px 10px;
+  background: rgba(0, 0, 0, 0.819);
+  color: white;
+  transition: 0.5s;
+  z-index: 10;
+  font-size: 22px;
+}
+
+.projects .row .project-info span {
+  position: absolute;
+  top: 30px;
+  left: 0;
+  background: var(--one-color);
+  color: white;
+  padding: 10px;
+  width: 100%;
+  font-size: 17px;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.5s;
+  z-index: 10;
+}
+
+.projects .row .project-info .zoom {
+  position: absolute;
+  bottom: -100px;
+  right: -100px;
+  color: white;
+  z-index: 10;
+  transition: 0.5s;
+  background: var(--one-color);
+  padding: 50px 30px 30px 50px;
+  border-radius: 100% 0px 0px 0px;
+}
+
+.projects .row .project-info .zoom i {
+  font-size: 30px;
+  transition: 0.2s;
+  visibility: hidden;
+  opacity: 0;
+  cursor: pointer;
+  color: white;
+}
+
+.projects .row .project-info .zoom i:hover {
+  color: var(--two-color);
+}
+
+.projects .row .project-info:hover > span {
+  opacity: 1;
+  visibility: visible;
+}
+
+.projects .row .project-info:hover > img {
+  transform: scale(1.2);
+}
+
+.projects .row .project-info:hover > h4 {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.projects .row .project-info:hover > .zoom {
+  right: 0;
+  bottom: 0;
+}
+
+.projects .row .project-info:hover > .zoom i {
+  opacity: 1;
+  visibility: visible;
+}
+
+.projects .more {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.projects .more .more-pro {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  border: 2px solid var(--two-color);
+  background: var(--two-color);
+  padding: 5px 25px 8px 25px;
+  border-radius: 5px;
+  font-weight: 500;
+  transition: 0.4s;
+}
+
+.projects .more .more-pro i {
+  margin-left: 10px;
+}
+
+.projects .more .more-pro:hover {
+  color: var(--two-color);
+  background: none;
+}
+
+@media (max-width: 1199px) {
+  .projects .projects-filter {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .projects .projects-filter select {
+    margin-bottom: 10px;
+  }
+
+  .projects .projects-filter button {
+    width: 150px;
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 767px) {
+  .projects .projects-filter {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 575px) {
+  .projects .row {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+/* project section end */

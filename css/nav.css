@@ -57,6 +57,11 @@ body {
   transition: 0.4s;
 }
 
+.nav-bar .nav-cover .page-links li .active {
+  font-weight: 600;
+  color: var(--one-color);
+}
+
 .nav-bar .nav-cover .page-links li .link:hover {
   color: var(--one-color);
 }
@@ -210,6 +215,11 @@ body {
   transition: 0.4s;
 }
 
+.nav-bar .side-nav .side-links li .active {
+  font-weight: 600;
+  color: var(--one-color);
+}
+
 .nav-bar .side-nav .side-links li .link:hover {
   color: var(--one-color);
 }
@@ -223,6 +233,10 @@ body {
   width: 0;
   height: 2px;
   transition: 0.4s;
+}
+
+.nav-bar .side-nav .side-links li .active::before {
+  width: 100%;
 }
 
 .nav-bar .side-nav .side-links li .link:hover::before {
