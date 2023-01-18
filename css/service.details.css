@@ -273,6 +273,10 @@ body {
     display: flex;
     justify-content: center;
   }
+
+  .projects-list .project-head h3 {
+    font-size: 20px;
+  }
 }
 /* list of project end */
 
