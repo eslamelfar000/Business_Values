@@ -1,0 +1,354 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  --one-color: #fa9f13;
+  --two-color: #3b3b3b;
+  --three-color: #aa7817;
+}
+
+/* service details start */
+
+.service-details {
+  padding: 300px 0px 100px 0px;
+  background: rgba(0, 0, 0, 0.729);
+  color: white;
+  width: 100%;
+  overflow: hidden;
+}
+
+.service-details .col-head {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.service-details .row .col-head h3 {
+  font-size: 25px;
+  font-weight: 600;
+  padding: 10px 10px 13px 10px;
+  border-bottom: 2px solid white;
+  border-top: 2px solid white;
+}
+
+.service-details .row .body {
+  display: flex;
+}
+
+.service-details .row .body img {
+  width: 40px;
+  height: 40px;
+  filter: invert(73%) sepia(24%) saturate(4167%) hue-rotate(350deg)
+    brightness(99%) contrast(98%);
+  margin-right: 20px;
+}
+
+.service-details .row .body p {
+  font-size: 20px;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+.service-details .row ul {
+  list-style: none;
+  padding: 0;
+  padding-left: 55px;
+  margin: 0;
+}
+
+.service-details .row ul li {
+  margin-bottom: 30px;
+  display: flex;
+}
+
+.service-details .row ul li img {
+  width: 30px;
+  height: 30px;
+  margin-right: 20px;
+  filter: invert(73%) sepia(24%) saturate(4167%) hue-rotate(350deg)
+    brightness(99%) contrast(98%);
+}
+
+.service-details .row ul li p {
+  font-size: 18px;
+  opacity: 0.8;
+}
+
+@media (max-width: 767px) {
+  .service-details .container {
+    max-width: 700px;
+  }
+
+  .service-details .row ul {
+    padding-left: 30px;
+  }
+
+  .service-details .row .body p {
+    font-size: 18px;
+  }
+  .service-details .row ul li p {
+    font-size: 16px;
+  }
+
+  .service-details .row .body img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+  }
+
+  .service-details .row ul li img {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+  }
+}
+
+/* service details end */
+
+/* list of project start */
+
+.projects-list {
+  padding: 100px 0px;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  background: var(--two-color);
+}
+
+.projects-list .project-head {
+  display: flex;
+  justify-content: center;
+  color: white;
+  margin-bottom: 40px;
+}
+
+.projects-list .project-head h3 {
+  font-size: 25px;
+  border-top: 2px solid white;
+  border-bottom: 2px solid white;
+  padding: 10px 20px;
+}
+
+.projects-list .row {
+  display: flex;
+  align-items: center;
+}
+
+.projects-list .row .project-info {
+  overflow: hidden;
+  position: relative;
+  border-radius: 5px;
+  margin-bottom: 40px;
+  height: 300px;
+}
+
+.projects-list .row .project-info::after {
+  content: "";
+  position: absolute;
+  background: rgba(0, 0, 0, 0.201);
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  transition: 0.5s;
+}
+
+.projects-list .row .project-info:hover::after {
+  background: rgba(0, 0, 0, 0.605);
+}
+
+.projects-list .row img {
+  width: 100%;
+  height: 100%;
+  transition: 0.5s;
+}
+
+.projects-list .row .project-info h4 {
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+  width: 100%;
+  padding: 15px 10px;
+  background: rgba(0, 0, 0, 0.819);
+  color: white;
+  transition: 0.5s;
+  z-index: 10;
+}
+
+.projects-list .row .project-info span {
+  position: absolute;
+  top: 30px;
+  left: 0;
+  background: var(--one-color);
+  color: white;
+  padding: 10px;
+  width: 100%;
+  font-size: 17px;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.5s;
+  z-index: 10;
+}
+
+.projects-list .row .project-info .zoom {
+  position: absolute;
+  bottom: -100px;
+  right: -100px;
+  color: white;
+  z-index: 10;
+  transition: 0.5s;
+  background: var(--one-color);
+  padding: 50px 30px 30px 50px;
+  border-radius: 100% 0px 0px 0px;
+}
+
+.projects-list .row .project-info .zoom i {
+  font-size: 30px;
+  transition: 0.2s;
+  visibility: hidden;
+  opacity: 0;
+  cursor: pointer;
+  color: white;
+}
+
+.projects-list .row .project-info .zoom i:hover {
+  color: var(--two-color);
+}
+
+.projects-list .row .project-info:hover > span {
+  opacity: 1;
+  visibility: visible;
+}
+
+.projects-list .row .project-info:hover > img {
+  transform: scale(1.2);
+}
+
+.projects-list .row .project-info:hover > h4 {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.projects-list .row .project-info:hover > .zoom {
+  right: 0;
+  bottom: 0;
+}
+
+.projects-list .row .project-info:hover > .zoom i {
+  opacity: 1;
+  visibility: visible;
+}
+
+.projects-list .all {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.projects-list .all .all-pro {
+  text-decoration: none;
+  color: white;
+  font-size: 22px;
+  border: 2px solid var(--one-color);
+  background: var(--one-color);
+  padding: 5px 25px;
+  border-radius: 5px;
+  font-weight: 500;
+  transition: 0.4s;
+}
+
+.projects-list .all .all-pro i {
+  margin-left: 10px;
+}
+
+.projects-list .all .all-pro:hover {
+  color: var(--one-color);
+  background: none;
+}
+
+@media (max-width: 575px) {
+  .projects-list .row {
+    display: flex;
+    justify-content: center;
+  }
+}
+/* list of project end */
+
+/* clients start */
+
+.clients {
+  padding: 80px 0px;
+  width: 100%;
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.805);
+}
+
+.clients .client-head {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.clients .client-head h3 {
+  font-size: 25px;
+  font-weight: 600;
+  padding: 10px 10px 13px 10px;
+  color: var(--two-color);
+  border-top: 2px solid var(--two-color);
+  border-bottom: 2px solid var(--two-color);
+}
+
+.clients .swiper .swiper-slide {
+  height: auto;
+  user-select: none;
+}
+
+.clients .swiper .swiper-slide .slide-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.clients .swiper .swiper-slide img {
+  width: 50%;
+  object-fit: cover;
+}
+
+.clients .swiper-button-prev,
+.clients .swiper-button-next {
+  font-size: 12px !important;
+  color: black;
+  opacity: 0.5;
+  transition: 0.3s;
+  position: absolute;
+}
+
+.clients .swiper .swiper-button-next {
+  margin-right: -250px;
+}
+.clients .swiper-button-prev {
+  margin-left: -250px;
+}
+
+.clients .swiper-button-prev:hover,
+.clients .swiper-button-next:hover {
+  opacity: 1;
+  color: var(--one-color);
+}
+
+.clients .swiper-button-prev::after,
+.clients .swiper-button-next::after {
+  font-size: 28px;
+  font-weight: 800;
+}
+
+.clients .mySwiper-client:hover > .swiper-button-prev,
+.clients .mySwiper-client:hover > .swiper-button-next {
+  margin-left: 0px !important;
+  margin-right: 0px !important;
+}
+
+/* clients end */

@@ -9,6 +9,12 @@ body {
   --three-color: #aa7817;
 }
 
+html {
+  scroll-behavior: smooth;
+  scrollbar-width: auto;
+  scrollbar-color: var(--one-color) var(--two-color);
+}
+
 .nav-bar {
   width: 100%;
   position: fixed;

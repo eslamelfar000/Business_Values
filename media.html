@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./liberaries/bootstrap-5.3.0-alpha1-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="./liberaries/fontawesome-free-6.2.1-web/css/all.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./css/nav.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/body&header.css">
+    <link rel="stylesheet" href="./css/media.css">
+    <link rel="shortcut icon" href="#" type="image/x-icon">
+    <title>Services - Business Values Company</title>
+</head>
+
+<body>
+    <!-- navbar start -->
+
+    <nav class="nav-bar">
+        <div class="container">
+            <div class="nav-cover" id="nav">
+                <div class="logo-img">
+                    <a href="home.html"><img src="./pics/logo.jpeg" alt=""></a>
+                </div>
+
+                <ul class="page-links">
+                    <li>
+                        <a class="link" href="services.html">SERVICES</a>
+                    </li>
+                    <li>
+                        <a class="link" href="team.html">MEET THE TEAM</a>
+                    </li>
+                    <li>
+                        <a class="link" href="projects.html">OUR PROJECTS</a>
+                    </li>
+                    <li>
+                        <a class="link" href="career.html">CAREER</a>
+                    </li>
+                    <li>
+                        <a class="link active" href="media.html">MEDIA</a>
+                    </li>
+                    <li>
+                        <a class="link" href="contact.html">CONTACT US</a>
+                    </li>
+                </ul>
+
+                <div class="nav-search" id="search-cover">
+                    <input class="in" type="search" name="" id="search-input" placeholder="search anything here...">
+                </div>
+
+                <button class="search-btn">
+                    <div class="side-nav-btn">
+                        <i class="bi bi-grid-3x3-gap-fill" onclick="openSide()"></i>
+                    </div>
+
+                    <i class="bi bi-search" id="search-btn" onclick="openSearch()"></i>
+                    <i class="bi bi-x-lg" id="close-search-btn" onclick="closeSearch()"></i>
+                </button>
+            </div>
+        </div>
+
+
+        <div class="side-overlay">
+            <div class="side-nav">
+                <div class="close-side-btn">
+                    <i class="bi bi-x-lg" onclick="closeSide()"></i>
+                </div>
+
+                <div class="logo-img">
+                    <a href="home.html"><img src="./pics/logo.jpeg" alt=""></a>
+                </div>
+
+                <ul class="side-links">
+                    <li>
+                        <a class="link" href="services.html">SERVICES</a>
+                    </li>
+                    <li>
+                        <a class="link" href="team.html">MEET THE TEAM</a>
+                    </li>
+                    <li>
+                        <a class="link" href="projects.html">OUR PROJECTS</a>
+                    </li>
+                    <li>
+                        <a class="link" href="career.html">CAREER</a>
+                    </li>
+                    <li>
+                        <a class="link active" href="media.html">MEDIA</a>
+                    </li>
+                    <li>
+                        <a class="link" href="contact.html">CONTACT US</a>
+                    </li>
+                </ul>
+
+                <div class="line">
+                    <hr>
+                </div>
+
+
+                <ul class="social-links">
+                    <li>
+                        <a href="#">
+                            <i class="bi bi-facebook"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="bi bi-instagram"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="bi bi-twitter"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="bi bi-linkedin"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="bi bi-youtube"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+
+
+        <div class="toUp">
+            <i class="bi bi-chevron-double-up"></i>
+        </div>
+    </nav>
+
+    <!-- navbar end -->
+
+
+    <div class="home-header">
+        <div class="header-content">
+            <div class="slide-content">
+                <h1>Business Values</h1>
+                <h4>GENERAL CONTRACTORS</h4>
+                <div></div>
+
+                <p>YOUR SOLID PARTNER</p>
+
+                <ul class="social-slide">
+                    <li>
+                        <a href="#">
+                            <i class="bi bi-facebook"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="bi bi-instagram"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="bi bi-twitter"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="bi bi-linkedin"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="bi bi-youtube"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- services start -->
+
+    <section class="media">
+        <div class="container">
+
+            <div class="head-container">
+                <div class="media-head mix news">
+                    <h3>Business Values Media</h3>
+                </div>
+            </div>
+
+            <div class="media-filter">
+                <ul class="first">
+                    <li class="filter active" id="filter-btn" data-filter=".all">
+                        <img src="./pics/news.png" alt="">
+                        <span>All</span>
+                    </li>
+                    <li class="filter" id="filter-btn" data-filter=".liberary">
+                        <img src="./pics/open-book.png" alt="">
+                        <span>Business Values Liberary</span>
+                    </li>
+                    <li class="filter" id="filter-btn" data-filter=".report">
+                        <img src="./pics/report.png" alt="">
+                        <span>Reporting From Site</span>
+                    </li>
+                    <li class="filter" id="filter-btn" data-filter=".news">
+                        <img src="./pics/newspaper.png" alt="">
+                        <span>Business Values News</span>
+                    </li>
+                    <li class="filter" id="filter-btn" data-filter=".special">
+                        <img src="./pics/report-2.png" alt="">
+                        <span>Special Reports</span>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="container-filter">
+                <div class="row">
+                    <div class="colom col-11 col-sm-10 col-md-6 col-lg-4 col-xxl-3 mix all , news">
+                        <div class="col-details" onclick="popUpPage()">
+                            <div class="card-img">
+                                <img src="pics/power.jpg" alt="">
+                                <i class="bi bi-zoom-in"></i>
+                            </div>
+
+                            <div class="card-info">
+                                <div class="card-title">
+                                    <h3 class="title">
+                                        Title
+                                    </h3>
+                                </div>
+                                <p>With urbanization, scarce resources and climate change, the global challenges are
+                                    prompting a high growth in efficie
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="colom col-11 col-sm-10 col-md-6 col-lg-4 col-xxl-3 mix all , special , liberary">
+                        <div class="col-details" onclick="popUpPage()">
+                            <div class="card-img">
+                                <img src="pics/build.jpg" alt="">
+                                <i class="bi bi-zoom-in"></i>
+                            </div>
+
+                            <div class="card-info">
+                                <div class="card-title">
+                                    <h3 class="title">
+                                        Title
+                                    </h3>
+                                </div>
+                                <p>It has long been a tradition at Almabani to rise to challenges with a
+                                    determination to
+                                    meet deadlines. Th
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="colom col-11 col-sm-10 col-md-6 col-lg-4 col-xxl-3 mix all , news , report">
+                        <div class="col-details" onclick="popUpPage()">
+                            <div class="card-img">
+                                <img src="pics/military.webp" alt="">
+                                <i class="bi bi-zoom-in"></i>
+                            </div>
+
+                            <div class="card-info">
+                                <div class="card-title">
+                                    <h3 class="title">
+                                        Title
+                                    </h3>
+                                </div>
+                                <p>Over the last 4 decades, Almabani has taken on multiple Military Governmental
+                                    contracts
+                                    within the Kingdom of
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="colom col-11 col-sm-10 col-md-6 col-lg-4 col-xxl-3 mix all , liberary , special">
+                        <div class="col-details" onclick="popUpPage()">
+                            <div class="card-img">
+                                <img src="pics/Industry.webp" alt="">
+                                <i class="bi bi-zoom-in"></i>
+                            </div>
+
+                            <div class="card-info">
+                                <div class="card-title">
+                                    <h3 class="title">
+                                        Title
+                                    </h3>
+                                </div>
+                                <p>In arid regions like the Middle East, efficient conversion of seawater into fresh
+                                    water
+                                    is a prerequisite to developm
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="colom col-11 col-sm-10 col-md-6 col-lg-4 col-xxl-3 mix all , news , liberary">
+                        <div class="col-details" onclick="popUpPage()">
+                            <div class="card-img">
+                                <img src="pics/inf.jpg" alt="">
+                                <i class="bi bi-zoom-in"></i>
+                            </div>
+
+                            <div class="card-info">
+                                <div class="card-title">
+                                    <h3 class="title">
+                                        Title
+                                    </h3>
+                                </div>
+                                <p>Almabani’s long time experience in the construction industry spreads over civil
+                                    construction, electro-mechanical works,
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="colom col-11 col-sm-10 col-md-6 col-lg-4 col-xxl-3 mix all , report , special">
+                        <div class="col-details" onclick="popUpPage()">
+                            <div class="card-img">
+                                <img src="pics/plane.jpg" alt="">
+                                <i class="bi bi-zoom-in"></i>
+                            </div>
+
+                            <div class="card-info">
+                                <div class="card-title">
+                                    <h3 class="title">
+                                        Title
+                                    </h3>
+                                </div>
+                                <p>Almabani takes particular pride in its contributions to the Kingdom's air, sea, and
+                                    land
+                                    based defense projects
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="popUp-over" id="popUp">
+                <div class="popUp-content">
+                    <div class="close" onclick="closePopUpPage()">
+                        <i class="bi bi-x-lg"></i>
+                    </div>
+                    <div class="row">
+                        <div class="col-10 col-lg-3">
+                            <div class="pop-img">
+                                <img src="./pics/pop.PNG" alt="">
+                            </div>
+                        </div>
+
+                        <div class="col-11 col-lg-8">
+                            <div class="pop-desc">
+                                <h3>$22.5bn Riyadh metro work gathers pace</h3>
+                                <p>Youssef Nehme Tohme is the Chairman of the Board of Managers of Almabani General
+                                    Contractors LLC. In his capacity, he holds directorship and executive position in
+                                    the companies’ activities and business.
+                                    Born in 1974, Youssef has received both his Bachelors’ and Masters’ degree in Civil
+                                    Engineering from City, University of London and is a Member of the Institute of
+                                    Civil Engineers.
+                                    Youssef started his professional career working in the Oil and Gas sector where he
+                                    built the business bottom-up tuning Levant Oil LLC. company into an international
+                                    trading, importation, storage and distribution company with an annual turnover of
+                                    720,000 metric tons yearly of refined gasoline and gasoil products thru a terminal
+                                    storage facility of 55,000 metric tons. In his capacity as CEO, his activities
+                                    covered the Levant and West African region turning the company into an international
+                                    multi-million Dollar player.
+                                    Youssef joined Almabani General Contractors in 2009 as Vice President and through
+                                    his managerial experience and civil engineering background helped manage all
+                                    activities across Almabanis’ business. Youssef served up until 2020 as Member of
+                                    Board and Member of the Steering Committee of the Riyadh Metro Project overlooking
+                                    the execution of the multi-billion Saudi Riyals mega project. In 2020 Youssef was
+                                    promoted to Chairman of the Board of Almabani General Contractors, where he serves
+                                    as a board member as well as overlooks the daily activities of the company.
+                                    Youssef heads the Nehme & Therese Foundation a private charity, non-profit
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- services end -->
+
+
+
+
+    <!-- footer start -->
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-info">
+                <div class="footer-logo">
+                    <a href="home.html"><img src="./pics/logo.jpeg" alt=""></a>
+                </div>
+
+                <ul class="footer-links">
+                    <li>
+                        <a href="#">
+                            <i class="bi bi-facebook"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="bi bi-instagram"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="bi bi-twitter"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="bi bi-linkedin"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="bi bi-youtube"></i>
+                        </a>
+                    </li>
+                </ul>
+
+                <div class="footer-bottom">
+                    <p>Copyright <img src="./pics/copyright.png" alt=""> 2023 </p>
+                    <p> All Rights Reserved </p>
+                    <div class="bottom-links">
+                        <a href="#">Company Profile</a>
+                        <span>|</span>
+                        <a href="#">Terms of Use</a>
+                        <span>|</span>
+                        <a href="#">Privacy Policy</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- footer end -->
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"
+        integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mixitup/3.3.1/mixitup.min.js"
+        integrity="sha512-nKZDK+ztK6Ug+2B6DZx+QtgeyAmo9YThZob8O3xgjqhw2IVQdAITFasl/jqbyDwclMkLXFOZRiytnUrXk/PM6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./js/nav.js"></script>
+    <script src="./js/team&media.js"></script>
+
+    <script>
+        var mixer = mixitup('.container-filter');
+    </script>
+</body>
+
+</html>

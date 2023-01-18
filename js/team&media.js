@@ -25,3 +25,21 @@ document.addEventListener('click', (e) => {
     }
 })
 
+
+// media filter
+let btn = document.querySelectorAll('#filter-btn');
+
+btn.forEach(i => {
+    i.addEventListener('click', () => {
+        removeActive()
+        i.classList.add('active')
+    })
+})
+
+const removeActive = () => {
+    btn.forEach(item => {
+        item.classList.remove('active')
+    })
+}
+
+
