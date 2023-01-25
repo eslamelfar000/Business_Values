@@ -535,6 +535,26 @@
   margin-bottom: 0;
 }
 
+@media (max-width: 460px) {
+  .statistics .row .col-info .icon {
+    padding: 22px;
+  }
+
+  .statistics .row .col-info .icon img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .statistics .row .col-info h3 {
+    font-size: 26px;
+  }
+
+  .statistics .row .col-info p {
+    font-size: 15px;
+    font-weight: 700;
+  }
+}
+
 /* statistics end */
 
 /* section img start */
