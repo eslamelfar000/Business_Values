@@ -1,0 +1,172 @@
+:root {
+  --one-color: #fa9f13;
+  --two-color: #3b3b3b;
+  --three-color: #aa7817;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.privacy {
+  padding: 200px 0px 100px 0px;
+  background: rgba(0, 0, 0, 0.819);
+  display: flex;
+  justify-content: center;
+  color: white;
+}
+
+.privacy .row {
+  display: flex;
+  justify-content: center;
+}
+
+.privacy .row .head {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.privacy .row .head .title-border {
+  border: 2px solid white;
+  transform: skewX(-25deg);
+  border-radius: 10px;
+}
+
+.privacy .row .head h2 {
+  font-size: 25px;
+  color: white;
+  font-weight: 600;
+  margin-bottom: 0;
+  text-align: center;
+  padding: 10px 40px;
+  background: var(--one-color);
+  margin: 7px 7px -15px -15px;
+  border-radius: 10px;
+  box-shadow: 10px -10px 10px 0px rgba(255, 255, 255, 0.194);
+}
+
+.privacy .row .privacy-content .big-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.privacy .row .privacy-content .big-list li {
+  display: flex;
+  margin-bottom: 40px;
+}
+
+.privacy .row .privacy-content .big-list li img {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+  filter: invert(73%) sepia(24%) saturate(4167%) hue-rotate(350deg)
+    brightness(99%) contrast(98%);
+}
+
+.privacy .row .privacy-content .big-list li h3 {
+  font-size: 25px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.privacy .row .privacy-content .big-list li p {
+  opacity: 0.8;
+  font-size: 17px;
+  margin-bottom: 10px;
+  padding-right: 10px;
+}
+
+.privacy .row .privacy-content .big-list li ul {
+  margin-bottom: 20px;
+  padding: 0;
+  margin: 0;
+  padding-left: 20px;
+}
+
+.privacy .row .privacy-content .big-list li .grid-ul {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.privacy .row .privacy-content .big-list table {
+  width: 100%;
+}
+
+.privacy .row .privacy-content .big-list table td {
+  border: 2px solid var(--one-color);
+  padding: 10px;
+  padding-left: 20px;
+}
+
+.privacy .row .privacy-content .big-list table thead td {
+  background: var(--one-color);
+  color: var(--two-color);
+  font-weight: 700;
+}
+
+.privacy .row .privacy-content .big-list table thead td:nth-child(1) {
+  border-right-color: var(--two-color);
+}
+
+.privacy .row .privacy-content .big-list table thead td:nth-child(2) {
+  border-left-color: var(--two-color);
+}
+
+.privacy .row .privacy-content .big-list li ul li {
+  margin-bottom: 20px;
+  display: flex;
+  opacity: 0.7;
+}
+
+.privacy .row .privacy-content .big-list li ul li img {
+  margin-right: 5px;
+}
+
+.privacy .row .privacy-content .big-list li ul li h4 {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.privacy .row .privacy-content .big-list li ul li span {
+  font-size: 16px;
+  opacity: 0.7;
+  padding-right: 10px;
+}
+
+@media (max-width: 991px) {
+  .privacy .row .privacy-content .big-list li .grid-ul {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+  .privacy .container {
+    max-width: 700px;
+  }
+}
+
+@media (max-width: 767px) {
+  .privacy .row .privacy-content .big-list li .grid-ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 575px) {
+  .privacy .row .privacy-content .big-list li p {
+    font-size: 15px;
+  }
+
+  .privacy .row .privacy-content .big-list li ul li span {
+    font-size: 13px;
+  }
+
+  .privacy .row .privacy-content .big-list li .grid-ul {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

@@ -6,6 +6,10 @@
 
 /* activities start */
 
+html {
+  scroll-behavior: smooth;
+}
+
 .activities {
   padding: 100px 0px;
   background: rgba(255, 255, 255, 0.808);
