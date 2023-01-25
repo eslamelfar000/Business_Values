@@ -19,12 +19,11 @@ html {
   width: 100%;
   position: fixed;
   z-index: 1000;
+  background: rgba(113, 113, 113, 0.513);
 }
 
 .nav-bar .nav-cover {
-  background: rgba(143, 143, 143, 0.513);
-  padding: 10px 20px;
-  margin-top: 20px;
+  padding: 10px 0;
   color: white;
   display: flex;
   justify-content: space-between;
@@ -35,12 +34,12 @@ html {
   z-index: 100;
 }
 
-.nav-bar .nav-change {
+/* .nav-bar .nav-change {
   background: rgba(109, 109, 109, 0.904);
-}
+} */
 
 .nav-bar .nav-cover .logo-img img {
-  width: 130px;
+  width: 120px;
   border-radius: 5px;
 }
 
@@ -92,7 +91,7 @@ html {
 }
 
 .nav-bar .nav-cover .search-btn i {
-  color: white;
+  color: var(--one-color);
   font-size: 25px;
   transition: 0.4s;
 }
@@ -116,7 +115,7 @@ html {
 }
 
 .nav-bar .nav-cover .search-btn i:hover {
-  color: var(--one-color);
+  color: white;
 }
 
 .nav-bar .nav-cover .nav-search {

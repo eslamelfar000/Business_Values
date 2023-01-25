@@ -58,6 +58,16 @@
   opacity: 0.6;
 }
 
+.footer .footer-info p a {
+  text-decoration: none;
+  color: white;
+  transition: 0.3s;
+}
+
+.footer .footer-info p a:hover {
+  color: var(--one-color);
+}
+
 .footer .footer-info p img {
   width: 16px;
   margin: 0px 5px;
