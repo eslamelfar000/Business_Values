@@ -119,10 +119,10 @@
 }
 
 .activities .swiper .card-info .card-info-bottom a:hover > i {
-  animation: move 0.3s infinite alternate;
+  animation: moving 0.3s infinite alternate;
 }
 
-@keyframes move {
+@keyframes moving {
   from {
     right: 20px;
   }
@@ -400,7 +400,7 @@
 }
 
 @media (max-width: 575px) {
-  .projects .project-head h3 {
+  .videos .videos-head h3 {
     font-size: 18px;
   }
 }
