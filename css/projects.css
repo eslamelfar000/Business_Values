@@ -20,17 +20,29 @@ body {
 }
 
 .projects .projects-head {
+  margin-bottom: 60px;
   display: flex;
   justify-content: center;
-  color: var(--two-color);
-  margin-bottom: 40px;
+}
+
+.projects .projects-head .title-border {
+  /* padding: 5px 5px 0px 0px; */
+  border: 2px solid var(--two-color);
+  transform: skewX(-25deg);
+  border-radius: 10px;
 }
 
 .projects .projects-head h3 {
-  font-size: 25px;
-  border-top: 2px solid var(--two-color);
-  border-bottom: 2px solid var(--two-color);
-  padding: 10px 20px;
+  font-size: 22px;
+  color: var(--two-color);
+  font-weight: 600;
+  margin-bottom: 0;
+  text-align: center;
+  padding: 10px 40px;
+  background: var(--one-color);
+  margin: 7px 7px -15px -15px;
+  border-radius: 10px;
+  box-shadow: 10px -10px 10px 0px rgba(0, 0, 0, 0.194);
 }
 
 .projects .projects-filter {
@@ -128,7 +140,7 @@ body {
   color: white;
   transition: 0.5s;
   z-index: 10;
-  font-size: 22px;
+  font-size: 18px;
 }
 
 .projects .row .project-info span {
@@ -158,6 +170,10 @@ body {
   border-radius: 100% 0px 0px 0px;
 }
 
+.projects .row .project-info .zoom a {
+  text-decoration: none;
+}
+
 .projects .row .project-info .zoom i {
   font-size: 30px;
   transition: 0.2s;
@@ -165,6 +181,7 @@ body {
   opacity: 0;
   cursor: pointer;
   color: white;
+  display: flex;
 }
 
 .projects .row .project-info .zoom i:hover {
@@ -193,6 +210,16 @@ body {
 .projects .row .project-info:hover > .zoom i {
   opacity: 1;
   visibility: visible;
+  animation: move 0.4s infinite alternate;
+}
+
+@keyframes move {
+  from {
+    transform: translateX(-10px);
+  }
+  to {
+    transform: translateX(10px);
+  }
 }
 
 .projects .more {
@@ -263,6 +290,10 @@ body {
   .projects .row {
     display: flex;
     justify-content: center;
+  }
+
+  .projects .projects-head h3 {
+    font-size: 16px;
   }
 }
 

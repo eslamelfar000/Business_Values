@@ -18,18 +18,29 @@ body {
 }
 
 .services .services-head {
+  margin-bottom: 60px;
   display: flex;
   justify-content: center;
-  margin-bottom: 40px;
+}
+
+.services .services-head .title-border {
+  /* padding: 5px 5px 0px 0px; */
+  border: 2px solid var(--two-color);
+  transform: skewX(-25deg);
+  border-radius: 10px;
 }
 
 .services .services-head h3 {
   font-size: 25px;
   color: var(--two-color);
-  border-top: 2px solid var(--two-color);
-  border-bottom: 2px solid var(--two-color);
+  font-weight: 600;
   margin-bottom: 0;
-  padding: 10px 10px 15px 10px;
+  text-align: center;
+  padding: 10px 40px;
+  background: var(--one-color);
+  margin: 7px 7px -15px -15px;
+  border-radius: 10px;
+  box-shadow: 10px -10px 10px 0px rgba(0, 0, 0, 0.194);
 }
 
 .services .row .colom {
@@ -105,5 +116,11 @@ body {
   .services .row {
     display: flex;
     justify-content: center;
+  }
+}
+
+@media (max-width: 575px) {
+  .services .services-head h3 {
+    font-size: 16px;
   }
 }

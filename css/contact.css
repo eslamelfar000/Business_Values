@@ -22,17 +22,29 @@ body {
 }
 
 .contact .contact-head {
+  margin-bottom: 60px;
   display: flex;
   justify-content: center;
-  margin-bottom: 40px;
+}
+
+.contact .contact-head .title-border {
+  /* padding: 5px 5px 0px 0px; */
+  border: 2px solid white;
+  transform: skewX(-25deg);
+  border-radius: 10px;
 }
 
 .contact .contact-head h3 {
   font-size: 25px;
-  color: white;
-  padding: 10px 10px 14px 10px;
-  border-top: 2px solid white;
-  border-bottom: 2px solid white;
+  color: var(--two-color);
+  font-weight: 600;
+  margin-bottom: 0;
+  text-align: center;
+  padding: 10px 40px;
+  background: var(--one-color);
+  margin: 7px 7px -15px -15px;
+  border-radius: 10px;
+  box-shadow: 10px -10px 10px 0px rgba(255, 255, 255, 0.194);
 }
 
 .contact .row .intro {
@@ -430,6 +442,10 @@ body {
 }
 
 @media (max-width: 575px) {
+  .contact .contact-head h3 {
+    font-size: 16px;
+  }
+
   .contact-form .row .social-link li {
     margin: 0px 6px;
   }

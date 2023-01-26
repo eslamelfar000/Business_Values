@@ -20,17 +20,29 @@ body {
 }
 
 .service-details .col-head {
+  margin-bottom: 60px;
   display: flex;
   justify-content: center;
-  margin-bottom: 40px;
 }
 
-.service-details .row .col-head h3 {
+.service-details .col-head .title-border {
+  /* padding: 5px 5px 0px 0px; */
+  border: 2px solid white;
+  transform: skewX(-25deg);
+  border-radius: 10px;
+}
+
+.service-details .col-head h3 {
   font-size: 25px;
+  color: var(--two-color);
   font-weight: 600;
-  padding: 10px 10px 13px 10px;
-  border-bottom: 2px solid white;
-  border-top: 2px solid white;
+  margin-bottom: 0;
+  text-align: center;
+  padding: 10px 40px;
+  background: var(--one-color);
+  margin: 7px 7px -15px -15px;
+  border-radius: 10px;
+  box-shadow: 10px -10px 10px 0px rgba(255, 255, 255, 0.194);
 }
 
 .service-details .row .body {
@@ -105,6 +117,12 @@ body {
   }
 }
 
+@media (max-width: 575px) {
+  .service-details .col-head h3 {
+    font-size: 17px;
+  }
+}
+
 /* service details end */
 
 /* list of project start */
@@ -118,17 +136,29 @@ body {
 }
 
 .projects-list .project-head {
+  margin-bottom: 60px;
   display: flex;
   justify-content: center;
-  color: white;
-  margin-bottom: 40px;
+}
+
+.projects-list .project-head .title-border {
+  /* padding: 5px 5px 0px 0px; */
+  border: 2px solid white;
+  transform: skewX(-25deg);
+  border-radius: 10px;
 }
 
 .projects-list .project-head h3 {
-  font-size: 25px;
-  border-top: 2px solid white;
-  border-bottom: 2px solid white;
-  padding: 10px 20px;
+  font-size: 20px;
+  color: var(--two-color);
+  font-weight: 600;
+  margin-bottom: 0;
+  text-align: center;
+  padding: 10px 40px;
+  background: var(--one-color);
+  margin: 7px 7px -15px -15px;
+  border-radius: 10px;
+  box-shadow: 10px -10px 10px 0px rgba(255, 255, 255, 0.194);
 }
 
 .projects-list .row {
@@ -175,6 +205,7 @@ body {
   color: white;
   transition: 0.5s;
   z-index: 10;
+  font-size: 17px;
 }
 
 .projects-list .row .project-info span {
@@ -204,6 +235,10 @@ body {
   border-radius: 100% 0px 0px 0px;
 }
 
+.projects-list .row .project-info .zoom a {
+  text-decoration: none;
+}
+
 .projects-list .row .project-info .zoom i {
   font-size: 30px;
   transition: 0.2s;
@@ -211,6 +246,7 @@ body {
   opacity: 0;
   cursor: pointer;
   color: white;
+  display: flex;
 }
 
 .projects-list .row .project-info .zoom i:hover {
@@ -239,6 +275,16 @@ body {
 .projects-list .row .project-info:hover > .zoom i {
   opacity: 1;
   visibility: visible;
+  animation: move 0.4s infinite alternate;
+}
+
+@keyframes move {
+  from {
+    transform: translateX(-10px);
+  }
+  to {
+    transform: translateX(10px);
+  }
 }
 
 .projects-list .all {
@@ -275,7 +321,7 @@ body {
   }
 
   .projects-list .project-head h3 {
-    font-size: 20px;
+    font-size: 16px;
   }
 }
 /* list of project end */
@@ -290,18 +336,28 @@ body {
 }
 
 .clients .client-head {
+  margin-bottom: 60px;
   display: flex;
   justify-content: center;
-  margin-bottom: 40px;
+}
+
+.clients .client-head .title-border {
+  border: 2px solid var(--two-color);
+  transform: skewX(-25deg);
+  border-radius: 10px;
 }
 
 .clients .client-head h3 {
-  font-size: 25px;
-  font-weight: 600;
-  padding: 10px 10px 13px 10px;
+  font-size: 20px;
   color: var(--two-color);
-  border-top: 2px solid var(--two-color);
-  border-bottom: 2px solid var(--two-color);
+  font-weight: 600;
+  margin-bottom: 0;
+  text-align: center;
+  padding: 10px 40px;
+  background: var(--one-color);
+  margin: 7px 7px -15px -15px;
+  border-radius: 10px;
+  box-shadow: 10px -10px 10px 0px rgba(0, 0, 0, 0.194);
 }
 
 .clients .swiper .swiper-slide {

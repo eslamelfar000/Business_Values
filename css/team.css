@@ -29,22 +29,33 @@ body {
 }
 
 .manager .manager-head {
+  margin-bottom: 60px;
   display: flex;
   justify-content: center;
-  margin-bottom: 40px;
 }
 
-.manager .row .swiper-slide {
-  user-select: none;
-  height: auto !important;
+.manager .manager-head .title-border {
+  /* padding: 5px 5px 0px 0px; */
+  border: 2px solid var(--two-color);
+  transform: skewX(-25deg);
+  border-radius: 10px;
 }
 
 .manager .manager-head h3 {
-  font-size: 25px;
-  padding: 10px 10px 15px 10px;
-  border-top: 2px solid var(--two-color);
-  border-bottom: 2px solid var(--two-color);
+  font-size: 20px;
   color: var(--two-color);
+  font-weight: 600;
+  margin-bottom: 0;
+  text-align: center;
+  padding: 10px 40px;
+  background: var(--one-color);
+  margin: 7px 7px -15px -15px;
+  border-radius: 10px;
+  box-shadow: 10px -10px 10px 0px rgba(0, 0, 0, 0.194);
+}
+.manager .row .swiper-slide {
+  user-select: none;
+  height: auto !important;
 }
 
 .manager .row .manage-info {
@@ -244,6 +255,12 @@ body {
   .manager .popUp-over .popUp-content {
     width: 80%;
     height: auto;
+  }
+}
+
+@media (max-width: 575px) {
+  .manager .manager-head h3 {
+    font-size: 16px;
   }
 }
 
